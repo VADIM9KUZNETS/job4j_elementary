@@ -33,5 +33,14 @@ public class FindLoopTest {
         int expect = 0;
         assertThat(result, is(expect));
     }
+    @Test
+    public void whenArrayHas34Then0() {
+        FindLoop find = new FindLoop();
+        int[] input = new int[] {11, 45, 34};
+        int value = 12;
+        int result = find.indexOf(input, value);
+        int expect = 0;
+        assertThat(result, is(expect));
+    }
 
 }
