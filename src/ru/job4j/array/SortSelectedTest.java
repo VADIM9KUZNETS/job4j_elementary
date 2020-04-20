@@ -23,21 +23,21 @@ public class SortSelectedTest {
     public void whenSort2() {
         int[] input = new int[] {56, 45, 9, 32, 15};
         int[] result = SortSelected.sort(input);
-        int[] expect = new int[] {9, 56, 32, 45, 15};
+        int[] expect = new int[] {9, 15, 32, 45, 56};
         assertThat(result, is(expect));
     }
     @Test
     public void whenSort3() {
         int[] input = new int[] {56, 56, 9, 32, 15};
         int[] result = SortSelected.sort(input);
-        int[] expect = new int[] {9, 56, 32, 45, 15};
+        int[] expect = new int[] {9, 15, 32, 56, 56};
         assertThat(result, is(expect));
     }
     @Test
     public void whenSort4() {
         int[] input = new int[] {543, 58, 666, 32, 150};
         int[] result = SortSelected.sort(input);
-        int[] expect = new int[] {543, 58, 666, 150, 32};
+        int[] expect = new int[] {32, 58, 150, 543, 666};
         assertThat(result, is(expect));
     }
 }
