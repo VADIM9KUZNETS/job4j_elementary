@@ -9,16 +9,19 @@ public class Defragment {
                 array[index] = array[point];
                 array[point] = tmp;
             }
-            for (int i = 0; i < array.length - 1; i++) {
+            int i = 0;
+            while (i < array.length - 1) {
                 if (array[i] == null) {
                     int p = i + 1;
                     String tmp = array[i];
                     array[i] = array[p];
                     array[p] = tmp;
                 }
+                i++;
+
             }
 
-                System.out.print(array[index] + " ");
+            System.out.print(array[index] + " ");
 
         }
         return array;
