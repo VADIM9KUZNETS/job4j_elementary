@@ -1,14 +1,7 @@
 package ru.job4j.array;
-
 public class Defragment {
     public static String[] compress(String[] array) {
         for (int index = 0; index < array.length - 1; index++) {
-            if (array[index] == null) {
-                int point = index + 1;
-                String tmp = array[index];
-                array[index] = array[point];
-                array[point] = tmp;
-            }
             int i = 0;
             while (i < array.length - 1) {
                 if (array[i] == null) {
@@ -18,11 +11,8 @@ public class Defragment {
                     array[p] = tmp;
                 }
                 i++;
-
             }
-
             System.out.print(array[index] + " ");
-
         }
         return array;
     }
