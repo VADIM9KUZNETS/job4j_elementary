@@ -13,7 +13,7 @@ public class CrossArrayTest {
     @Test
     public void whenHasCross() {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(out));
+         System.setOut(new PrintStream(out));
         CrossArray.printCrossEl(
                 new int[] {1, 3},
                 new int[] {2, 1}
